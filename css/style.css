@@ -1,0 +1,36 @@
+html, body, #root, .background {
+  min-height: 100vh;
+}
+.carousel__item {
+  padding-top: 50%;
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+}
+.background {
+  background-image: url('/images/20.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+img {
+  max-width: 100%;
+}
+.thumbnail {
+  display: inline-block;
+}
+.table {
+  background-color: white;
+}
+th,
+td {
+  padding: 1em!important; /* Overriding bootstrap.*/
+}
+@media (min-width: 768px) {
+  .image--left {
+    margin-right: 1em;
+  }
+  .image--right {
+    margin-left: 1em;
+  }
+}

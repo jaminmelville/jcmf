@@ -1,0 +1,32 @@
+{
+  "name": "judith-clark",
+  "version": "1.0.0",
+  "description": "Judith Clark Memorial Fund",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "bootstrap": "^3.3.7",
+    "heightify": "^5.0.5",
+    "jquery": "^3.1.1",
+    "jssocials": "^1.4.0",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js -p",
+    "start": "webpack-dev-server"
+  },
+  "author": "Ben Melville",
+  "license": "ISC"
+}
