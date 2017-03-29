@@ -101,7 +101,7 @@ export default class Fellowships extends React.Component {
           <strong>{info.recipient}</strong> - {info.discipline} - {info.purpose}
           {/* <td>{info.year}</td>
           <td>${info.amount.toLocaleString()}</td> */}
-          <Thumbnail className="pull-right" target="_blank" disabled={!info.report} href={'/reports/' + info.report} alt="profile image" src="/images/profilepic.jpg" />
+          <Thumbnail className="pull-right thumbnail--fellowship" target="_blank" disabled={!info.report} href={'/reports/' + info.report} alt="profile image" src="/images/profilepic.jpg" />
           <div className="clearfix" />
           <hr />
         </div>

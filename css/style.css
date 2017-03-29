@@ -19,6 +19,9 @@ img {
 .thumbnail {
   display: inline-block;
 }
+.thumbnail--fellowship {
+  margin-bottom: 0;
+}
 .table {
   background-color: white;
 }
