@@ -22,7 +22,7 @@ export default class ProfessionalRecognition extends React.Component {
         </p>
         <p>
           <Image align="left" number={16}/>
-          Her receiving the award of the CMNZ for services to music in 1998 was thoroughly appropriate and well deserved.   It was noted that:
+          Her receiving the award of the CNZM for services to music in 1998 was thoroughly appropriate and well deserved.   It was noted that:
           “Judith was a huge inspiration in her love of beauty which made her home and garden unique.   She cultivated treasured plants in her garden and had gathered tasteful artistic treasures around her in her home – an accomplishment of tranquility, peace, and beauty."
         </p>
         <p>

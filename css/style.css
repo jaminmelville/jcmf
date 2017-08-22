@@ -16,8 +16,8 @@ html, body, #root, .background {
 img {
   max-width: 100%;
 }
-.thumbnail {
-  display: inline-block;
+.fellowships__row {
+  border-top: 1px solid #ddd;
 }
 .thumbnail--fellowship {
   margin-bottom: 0;
