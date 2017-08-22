@@ -26,7 +26,7 @@ const menuItems = [
   },
   {
     link: 'fellowships',
-    name: 'Fellowships',
+    name: 'Recent Fellowships',
   },
   {
     link: 'grants',

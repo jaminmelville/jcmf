@@ -43,22 +43,24 @@ const data = [
   }
 ];
 
+data.reverse();
+
 export default class Grants extends React.Component {
 
   componentDidMount() {
-    heightify({
-      element: $('.resize__title'),
-    });
-    heightify({
-      element: $('.resize__row'),
-    });
-    heightify({
-      element: $('.resize__panel'),
-    });
+    // heightify({
+    //   element: $('.resize__title'),
+    // });
+    // heightify({
+    //   element: $('.resize__row'),
+    // });
+    // heightify({
+    //   element: $('.resize__panel'),
+    // });
   }
 
   render() {
-    const grants = data.reverse().map((info, key) => {
+    const grants = data.map((info, key) => {
       return (
       <tr>
         <td>{info.recipient}</td>

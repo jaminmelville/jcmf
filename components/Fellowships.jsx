@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Col, Row, Panel, Table, Thumbnail } from 'react-bootstrap';
 import Layout from './Layout.jsx';
-import heightify from 'heightify';
 const $ = require("jquery");
 
 const data = [
@@ -11,7 +10,7 @@ const data = [
     recipient: 'Alexa Thomson',
     discipline: 'Viola',
     purpose: 'to attend the Aspen Music Festival',
-    report: '2015 Alexa Thomson.docx',
+    report: '2015 Alexa Thomson.pdf',
     image: 'Alexa Thomson.jpg',
   },
   {
@@ -20,7 +19,7 @@ const data = [
     recipient: 'Kate Oswin',
     discipline: 'Violin',
     purpose: 'to attend the Sinaia Summer Academy',
-    report: '2015 Kate Oswin.docx',
+    report: '2015 Kate Oswin.pdf',
     image: 'Kate Oswin.jpg',
   },
   {
@@ -29,7 +28,7 @@ const data = [
     recipient: 'Benson Wilson',
     discipline: 'Baritone',
     purpose: 'to attend the International Vocal Arts Institute summer program',
-    report: '2016 Benson Wilson.docx',
+    report: '2016 Benson Wilson.pdf',
     image: 'Benson Wilson.jpg',
   },
   {
@@ -47,7 +46,7 @@ const data = [
     recipient: 'Alexa Thomson',
     discipline: 'Viola',
     purpose: 'to record a CD of New Zealand viola music',
-    report: '2015 Alexa Thomson.docx',
+    report: '2016 Alexa Thomson.pdf',
     image: 'Alexa Thomson.jpg',
   },
   {
@@ -88,23 +87,12 @@ const data = [
   },
 ];
 
+data.reverse();
+
 export default class Fellowships extends React.Component {
 
-  componentDidMount() {
-    heightify({
-      element: $('.resize__title'),
-    });
-    heightify({
-      element: $('.resize__row'),
-    });
-    heightify({
-      element: $('.resize__panel'),
-    });
-  }
-
   render() {
-    const fellowships = data.reverse().map((info, key) => {
-
+    const fellowships = data.map((info, key) => {
       return (
         <tr className="fellowships__row">
           <td><strong>{info.recipient}</strong></td>
@@ -151,7 +139,7 @@ export default class Fellowships extends React.Component {
               <th>Year</th>
               <th>Discipline</th>
               <th>Purpose</th>
-              <th>Report</th>
+              <th></th>
               <th></th>
             </tr>
             {fellowships}
